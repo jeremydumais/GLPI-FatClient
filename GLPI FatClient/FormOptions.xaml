@@ -6,23 +6,25 @@
         xmlns:local="clr-namespace:GLPI_FatClient"
         mc:Ignorable="d"
         Title="Options
-        " Height="206.925" Width="558.172" ResizeMode="NoResize" Background="#FF252526" Loaded="Window_Loaded">
+        " Height="206.925" Width="558.172" ResizeMode="NoResize" Background="#FF252526" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Label Content="Token de l'application :" HorizontalAlignment="Left" Margin="54,29,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxUserToken" HorizontalAlignment="Left" Height="23" Margin="194,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" TabIndex="0"/>
-        <Label Content="Token utilisateur :" HorizontalAlignment="Left" Margin="83,64,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBoxAppToken" HorizontalAlignment="Left" Height="23" Margin="194,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" TabIndex="1"/>
+        <Label Content="Adresse URL de GLPI :" HorizontalAlignment="Left" Margin="59,28,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxGLPIURL" HorizontalAlignment="Left" Height="23" Margin="194,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" TabIndex="0"/>
+        <Label Content="Token de l'application :" HorizontalAlignment="Left" Margin="54,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxAppToken" HorizontalAlignment="Left" Height="23" Margin="194,55,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" TabIndex="1"/>
+        <Label Content="Token utilisateur :" HorizontalAlignment="Left" Margin="83,85,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxUserToken" HorizontalAlignment="Left" Height="23" Margin="194,83,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="333" TabIndex="2"/>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0 0 0 20">
             <Button Name="buttonSave" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="104" 
-                    HorizontalContentAlignment="Right" Padding="6,5,10,5" Click="ButtonSave_Click" TabIndex="2">
+                    HorizontalContentAlignment="Right" Padding="6,5,10,5" Click="ButtonSave_Click" TabIndex="3">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Images/Ok22.png" Width="16" Height="16" Margin="0,0,6,0"></Image>
                     <TextBlock>Sauvegarder</TextBlock>
                 </StackPanel>
             </Button>
             <Button Name="buttonCancel" Margin="0,10,24,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="82" 
-                    HorizontalContentAlignment="Right" Padding="6,5,10,5" Click="ButtonCancel_Click" TabIndex="3">
+                    HorizontalContentAlignment="Right" Padding="6,5,10,5" Click="ButtonCancel_Click" TabIndex="4">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="Images/Cancel22.png" Width="16" Height="16" Margin="0,0,6,0"></Image>
                     <TextBlock>Annuler</TextBlock>

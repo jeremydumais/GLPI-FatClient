@@ -5,11 +5,15 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GLPI FatClient", "GLPI FatClient\GLPI FatClient.csproj", "{3D103270-530E-4B86-8D79-3F4693255DA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.Models", "JedSharp.GLPIFatClient.Models\JedSharp.GLPIFatClient.Models.csproj", "{93245C44-12AF-42FC-AB9C-034C6210646F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JedSharp.GLPIFatClient.Models", "JedSharp.GLPIFatClient.Models\JedSharp.GLPIFatClient.Models.csproj", "{93245C44-12AF-42FC-AB9C-034C6210646F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.DataAccess", "JedSharp.GLPIFatClient.DataAccess\JedSharp.GLPIFatClient.DataAccess.csproj", "{7A65035E-DC72-4C1A-8CEF-8586D340756D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JedSharp.GLPIFatClient.UIModels", "JedSharp.GLPIFatClient.UIModels\JedSharp.GLPIFatClient.UIModels.csproj", "{7B300760-EDE8-4BE7-9236-64A441AEE2EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.UIModels", "JedSharp.GLPIFatClient.UIModels\JedSharp.GLPIFatClient.UIModels.csproj", "{7B300760-EDE8-4BE7-9236-64A441AEE2EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.Controller", "JedSharp.GLPIFatClient.Controller\JedSharp.GLPIFatClient.Controller.csproj", "{ABC2CB3C-9875-40C6-8516-19F7A3584D24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.Services", "JedSharp.GLPIFatClient.Services\JedSharp.GLPIFatClient.Services.csproj", "{7535248F-A229-4B96-8B7B-35C7C46D3712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JedSharp.GLPIFatClient.Interfaces", "JedSharp.GLPIFatClient.Interfaces\JedSharp.GLPIFatClient.Interfaces.csproj", "{B9DD7799-8A97-4077-9425-F2BF9BB16093}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +29,22 @@ Global
 		{93245C44-12AF-42FC-AB9C-034C6210646F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93245C44-12AF-42FC-AB9C-034C6210646F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93245C44-12AF-42FC-AB9C-034C6210646F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7A65035E-DC72-4C1A-8CEF-8586D340756D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7A65035E-DC72-4C1A-8CEF-8586D340756D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7A65035E-DC72-4C1A-8CEF-8586D340756D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7A65035E-DC72-4C1A-8CEF-8586D340756D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B300760-EDE8-4BE7-9236-64A441AEE2EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7B300760-EDE8-4BE7-9236-64A441AEE2EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7B300760-EDE8-4BE7-9236-64A441AEE2EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B300760-EDE8-4BE7-9236-64A441AEE2EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABC2CB3C-9875-40C6-8516-19F7A3584D24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABC2CB3C-9875-40C6-8516-19F7A3584D24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABC2CB3C-9875-40C6-8516-19F7A3584D24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABC2CB3C-9875-40C6-8516-19F7A3584D24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7535248F-A229-4B96-8B7B-35C7C46D3712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7535248F-A229-4B96-8B7B-35C7C46D3712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7535248F-A229-4B96-8B7B-35C7C46D3712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7535248F-A229-4B96-8B7B-35C7C46D3712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DD7799-8A97-4077-9425-F2BF9BB16093}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DD7799-8A97-4077-9425-F2BF9BB16093}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DD7799-8A97-4077-9425-F2BF9BB16093}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DD7799-8A97-4077-9425-F2BF9BB16093}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -35,8 +35,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -55,6 +61,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ControlTicketDetail.xaml.cs">
+      <DependentUpon>ControlTicketDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UIHelper.cs" />
+    <Page Include="ControlTicketDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ControlTicketList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FormOptions.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -63,10 +81,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Compile Include="ActionTabItem.cs" />
+    <Compile Include="ActionTabViewModel.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ControlTicketList.xaml.cs">
+      <DependentUpon>ControlTicketList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EnumTabType.cs" />
     <Compile Include="FormOptions.xaml.cs">
       <DependentUpon>FormOptions.xaml</DependentUpon>
     </Compile>
@@ -97,6 +121,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,6 +138,19 @@
     <Resource Include="Images\load.gif" />
     <Resource Include="Images\Ok22.png" />
     <Resource Include="Images\skewed_print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JedSharp.GLPIFatClient.Controller\JedSharp.GLPIFatClient.Controller.csproj">
+      <Project>{abc2cb3c-9875-40c6-8516-19f7a3584d24}</Project>
+      <Name>JedSharp.GLPIFatClient.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JedSharp.GLPIFatClient.UIModels\JedSharp.GLPIFatClient.UIModels.csproj">
+      <Project>{7b300760-ede8-4be7-9236-64a441aee2ef}</Project>
+      <Name>JedSharp.GLPIFatClient.UIModels</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\close16.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

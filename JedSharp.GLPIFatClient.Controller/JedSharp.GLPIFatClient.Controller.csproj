@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JedSharp.GLPIFatClient.Interfaces\JedSharp.GLPIFatClient.Interfaces.csproj" />
+    <ProjectReference Include="..\JedSharp.GLPIFatClient.Services\JedSharp.GLPIFatClient.Services.csproj" />
   </ItemGroup>
 
 </Project>

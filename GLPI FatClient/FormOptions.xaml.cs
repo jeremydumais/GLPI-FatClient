@@ -26,11 +26,19 @@ namespace GLPI_FatClient
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
+            //Load the actual preferences
+            textBoxGLPIURL.Text = Properties.Settings.Default.GLPIUrlAddress;
+            textBoxAppToken.Text = Properties.Settings.Default.AppToken;
+            textBoxUserToken.Text = Properties.Settings.Default.UserToken;
         }
 
         private void ButtonSave_Click(object sender, RoutedEventArgs e)
         {
+            //Load the actual preferences
+            Properties.Settings.Default.GLPIUrlAddress = textBoxGLPIURL.Text.Trim();
+            Properties.Settings.Default.AppToken = textBoxAppToken.Text.Trim();
+            Properties.Settings.Default.UserToken = textBoxUserToken.Text.Trim();
+            Properties.Settings.Default.Save();
             DialogResult = true;
             Close();
         }

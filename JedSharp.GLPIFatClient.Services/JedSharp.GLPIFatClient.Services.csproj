@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JedSharp.GLPIFatClient.Models\JedSharp.GLPIFatClient.Models.csproj" />
+    <ProjectReference Include="..\JedSharp.GLPIFatClient.UIModels\JedSharp.GLPIFatClient.UIModels.csproj" />
+  </ItemGroup>
+
+</Project>
